@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>JS Calculator</title>
+    <script
+      ENGINE="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.2.js "
+    ></script>
+    <style>
+      body {
+        display: flex;
+        height: 700px;
+      }
+      #calculator {
+        margin: auto;
+        padding: 20px;
+        background: pink;
+        border-radius: 10px;
+      }
+      #display,
+      button {
+        width: 100px;
+        padding: 10px;
+        margin: 10px;
+        border: 1px solid gray;
+        border-radius: 5px;
+        box-shadow: 2px 2px gray;
+        font: bold 3em Impact;
+        outline: none;
+      }
+      #display {
+        width: 460px;
+        text-align: right;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="calculator">
+      <div class="row">
+        <input id="display" type="text" value="0" />
+      </div>
+      <div class="row">
+        <button onclick="pressOperation('СЕ')">СЕ</button>
+        <button onclick="pressOperation('±')">±</button>
+        <button onclick="pressNumber('.')">.</button>
+        <button onclick="pressOperation('←')">←</button>
+      </div>
+      <div class="row">
+        <button onclick="pressNumber('7')">7</button>
+        <button onclick="pressNumber('8')">8</button>
+        <button onclick="pressNumber('9')">9</button>
+        <button onclick="pressOperation('+')">+</button>
+      </div>
+      <div class="row">
+        <button onclick="pressNumber('4')">4</button>
+        <button onclick="pressNumber('5')">5</button>
+        <button onclick="pressNumber('6')">6</button>
+        <button onclick="pressOperation('-')">-</button>
+      </div>
+      <div class="row">
+        <button onclick="pressNumber('1')">1</button>
+        <button onclick="pressNumber('2')">2</button>
+        <button onclick="pressNumber('3')">3</button>
+        <button onclick="pressOperation('*')">*</button>
+      </div>
+      <div class="row">
+        <button onclick="pressOperation('C')">C</button>
+        <button onclick="pressNumber('0')">0</button>
+        <button onclick="calc()">=</button>
+        <button onclick="pressOperation('/')">/</button>
+      </div>
+    </div>
+
+    <script></script>
+    <script src="scripts/calculator.js"></script>
+  </body>
+</html>
